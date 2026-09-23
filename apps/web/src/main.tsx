@@ -17,10 +17,23 @@ const API = import.meta.env.VITE_API_URL || '/api';
 
 async function api(path: string, opts?: RequestInit) {
   const response = await fetch(`${API}${path}`, opts);
-  const data = await response.json();
+  const contentType = response.headers.get('content-type') || '';
+
+  let data: any = null;
+
+  if (contentType.includes('application/json')) {
+    data = await response.json();
+  } else {
+    const text = await response.text();
+    data = text ? { message: text } : null;
+  }
 
   if (!response.ok) {
-    throw new Error(data.error || 'Erreur');
+    throw new Error(
+      data?.error ||
+      data?.message ||
+      `Erreur HTTP ${response.status} ${response.statusText}`
+    );
   }
 
   return data;
