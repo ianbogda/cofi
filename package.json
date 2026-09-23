@@ -1,0 +1,1 @@
+{"name":"cofi-eple","version":"0.1.0","private":true,"workspaces":["apps/*","packages/*"],"scripts":{"build":"npm run build -ws --if-present","typecheck":"npm run typecheck -ws --if-present","test":"npm run test -ws --if-present","dev:api":"npm -w @cofi/api run dev","dev:web":"npm -w @cofi/web run dev"},"engines":{"node":">=22"}}

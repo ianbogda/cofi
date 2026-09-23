@@ -1,0 +1,29 @@
+{
+  "id":"COFI_SCHEMA_2025","version":"0.1.0","fiscalYear":2025,
+  "documents":[
+    {"code":"COFI25-BAL","title":"Balance générale des comptes du grand livre","producer":"OPALE","requirement":"ALWAYS","order":10,"includeInFinalPdf":true},
+    {"code":"COFI25-DEP","title":"Développement des dépenses budgétaires","producer":"OPALE","requirement":"ALWAYS","order":20,"includeInFinalPdf":true},
+    {"code":"COFI25-REC","title":"Développement des recettes budgétaires","producer":"OPALE","requirement":"ALWAYS","order":30,"includeInFinalPdf":true},
+    {"code":"COFI25-CR","title":"Compte de résultat","producer":"OPALE","requirement":"ALWAYS","order":40,"includeInFinalPdf":true},
+    {"code":"COFI25-BIL","title":"Bilan","producer":"OPALE","requirement":"ALWAYS","order":50,"includeInFinalPdf":true},
+    {"code":"COFI25-ANN","title":"Annexe de l'agent comptable","producer":"ACCOUNTANT","requirement":"ALWAYS","order":60,"includeInFinalPdf":true},
+    {"code":"COFI25-EXEC","title":"Tableau récapitulatif de l'exécution du budget","producer":"OPALE","requirement":"ALWAYS","order":70,"includeInFinalPdf":true},
+    {"code":"COFI25-IND5","title":"Indicateurs d'analyse financière sur cinq ans","producer":"OPALE","requirement":"ALWAYS","order":80,"includeInFinalPdf":true},
+    {"code":"COFI25-VI","title":"Balance des comptes des valeurs inactives","producer":"OPALE","requirement":"ALWAYS","order":90,"includeInFinalPdf":true},
+    {"code":"COFI25-RDG","title":"Compte rendu de gestion","producer":"ORDONNATEUR","requirement":"ALWAYS","order":100,"includeInFinalPdf":true},
+    {"code":"COFI25-LOG","title":"État des consommations afférentes aux concessions de logements","producer":"ORDONNATEUR","requirement":"IF_EXISTS","order":110,"includeInFinalPdf":true},
+    {"code":"COFI25-DELIB","title":"Délibération du conseil d'administration","producer":"CA","requirement":"ALWAYS","order":120,"includeInFinalPdf":true},
+    {"code":"COFI25-BUD","title":"Budget","producer":"OPALE","requirement":"ALWAYS","order":130,"includeInFinalPdf":true},
+    {"code":"COFI25-DBM","title":"Décisions budgétaires modificatives","producer":"OPALE","requirement":"IF_EXISTS","order":140,"includeInFinalPdf":true},
+    {"code":"COFI25-PVC","title":"Procès-verbal de caisse et de portefeuille","producer":"ACCOUNTANT","requirement":"ALWAYS","order":150,"includeInFinalPdf":true},
+    {"code":"COFI25-DSC","title":"Développement du solde des comptes","producer":"OPALE","requirement":"ALWAYS","order":160,"includeInFinalPdf":true},
+    {"code":"COFI25-RES-IN","title":"Réserves du comptable entrant","producer":"ACCOUNTANT","requirement":"IF_ACCOUNTANT_CHANGED","order":170,"includeInFinalPdf":true},
+    {"code":"COFI25-REQ","title":"Dossier de réquisition","producer":"OTHER","requirement":"IF_REQUISITION","order":180,"includeInFinalPdf":true},
+    {"code":"COFI25-CHD","title":"Plan de contrôle hiérarchisé des dépenses","producer":"ACCOUNTANT","requirement":"IF_PCHD","order":190,"includeInFinalPdf":true},
+    {"code":"COFI25-CAP","title":"Convention de contrôle allégé en partenariat","producer":"ACCOUNTANT","requirement":"IF_CAP","order":200,"includeInFinalPdf":true},
+    {"code":"COFI25-AUDIT","title":"Rapport d'audit financier et comptable","producer":"OTHER","requirement":"IF_AUDIT","order":210,"includeInFinalPdf":true},
+    {"code":"COFI25-HANDOVER","title":"Procès-verbal de remise de service","producer":"ACCOUNTANT","requirement":"IF_ACCOUNTANT_CHANGED","order":220,"includeInFinalPdf":true},
+    {"code":"COFI25-BAL-MUT","title":"Balance générale au jour de la mutation","producer":"ACCOUNTANT","requirement":"IF_ACCOUNTANT_CHANGED","order":230,"includeInFinalPdf":true},
+    {"code":"COFI25-BEN1","title":"Balance d'entrée N+1 certifiée","producer":"OPALE","requirement":"POST_COFI","order":900,"includeInFinalPdf":false}
+  ]
+}
